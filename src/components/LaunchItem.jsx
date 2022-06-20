@@ -26,11 +26,11 @@ export function LaunchItem(launch) {
             .format("D MMMM, YYYY")}
         </Text>
       </Flex>
-      <Link to={'launch/${launch.flight_number}'}>
+      <Link to={`launch/${launch.flight_number}`}>
         <Button mt={4} colorScheme="purple">
           More Details
         </Button>
-        </Link>
+      </Link>
     </Box>
   )
 }
