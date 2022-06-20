@@ -7,7 +7,6 @@ export function LaunchItem(launch) {
 
   return (
     <Box bg="gray.100" p={4} m={4} borderRadius="lg">
-
       <Flex display="flex">
         <Text fontSize="2xl">
           Mission <strong>{launch.mission_name} ({launch.launch_year})</strong>

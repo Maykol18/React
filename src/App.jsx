@@ -4,7 +4,8 @@ import "dayjs/locale/es"
 import logo from "./assets/logo.png";
 
 import { LaunchList } from "./components/LaunchList";
-import {LaunchDetail } from "./components/LaunchDetails";
+import { LaunchDetails } from "./components/LaunchDetails";
+import { RocketDetails } from "./components/RocketDetails";
 
 export function App() {
 
@@ -13,7 +14,8 @@ export function App() {
     <Image src={logo} width={300} m={4} />
     <Routes>
       <Route path="/" element={<LaunchList />} />
-      <Route path="launch/:launchId" element={<LaunchDetail />} />
+      <Route path="launch/:launchId" element={<LaunchDetails />} />
+      <Route path="rockets/:rocketId" element={<RocketDetails />} />
     </Routes>    
     </>
   );  
